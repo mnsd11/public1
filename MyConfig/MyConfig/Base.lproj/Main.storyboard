@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyConfig" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Wc-hm-cn3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qa4-xT-Ec8">
+                                <rect key="frame" x="50" y="668" width="314" height="94"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="google.ru"/>
+                                <connections>
+                                    <segue destination="hhq-It-cOg" kind="show" id="CXw-EP-Prv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Wc-hm-cn3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Zw-en-P6U"/>
+                            <constraint firstItem="qa4-xT-Ec8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="624" id="OPI-hY-hJe"/>
+                            <constraint firstItem="6Wc-hm-cn3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TjG-ei-N1w"/>
+                            <constraint firstItem="qa4-xT-Ec8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="U5L-w8-z31"/>
+                            <constraint firstAttribute="trailing" secondItem="6Wc-hm-cn3" secondAttribute="trailing" id="XsF-MO-hbb"/>
+                            <constraint firstAttribute="bottom" secondItem="6Wc-hm-cn3" secondAttribute="bottom" id="djI-GU-eT8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qa4-xT-Ec8" secondAttribute="bottom" constant="100" id="keq-xM-csp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qa4-xT-Ec8" secondAttribute="trailing" constant="50" id="t5Q-um-ag8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="6Wc-hm-cn3" id="HNw-Ok-GJf"/>
+                        <outlet property="urlButton" destination="qa4-xT-Ec8" id="zRY-WZ-p3X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="feD-uR-YY8">
+            <objects>
+                <viewController id="hhq-It-cOg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HBA-gV-Qhm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="h0I-wI-45k"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K0a-q5-l1X"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hnb-ha-6rR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
